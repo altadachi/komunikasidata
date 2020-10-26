@@ -10,9 +10,15 @@
 ## Aplikasi Tugas Komunikasi Data
 
 <h4>Instalasi<h4>
-- Create Database mysql : db_tgskomdat
-- Composer Install
-- Install Node JS
-- Install PHP 7 (versi Baru)
-- npm install
-- php artinsan generete:key
+    <ul>
+        <li>Create Database mysql : db_tgskomdat</li>
+<li>Composer Install</li>
+<li>Install Node JS</li>
+<li>Install PHP 7 (versi Baru)</li>
+<li>npm install</li>
+<li>php artinsan generete:key</li>
+        <li>Jika menggunakan database mysql ----> install php-mysql </li>
+        <li>Jika menggunakan database mysql ----> install php-pgsql </li>
+</ul>
+    
+  

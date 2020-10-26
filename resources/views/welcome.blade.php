@@ -423,7 +423,7 @@
             </div>
             <form action="{{ url('cari') }}" method="GET" style="margin-top: 20px">
                 {{ @csrf_field() }}
-                <input type="text" name="cari" placeholder="Ingin mencari hardware apa ?" class="form-control"
+                <input type="text" name="cari" placeholder="Ingin mencari Data apa ?" class="form-control"
                     value="{{old('cari')}}"><br>
                 <input type="submit" value="cari" class="btn btn-md btn-outline-primary">
             </form>
@@ -445,7 +445,7 @@
 
                         <div class="ml-12">
                             <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-
+                                <p><b>Kategori : {{$data->kategori}}</b></p>
                                 <p>{{$data->keterangan}}</p>
                             </div>
                         </div>

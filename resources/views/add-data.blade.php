@@ -49,7 +49,7 @@
                             <img id="previewImg" alt="Gambar" style="max-width: 130px;margin-top:20px;">
                         </div>
                         <input type="submit" class="btn btn-primary float-right" value="Simpan">
-                        <a href="/view-data" type="button" class="btn btn-danger float-right">Batal</a>
+                        <a href="{{url('/view-data')}}" type="button" class="btn btn-danger float-right">Batal</a>
                     </form>
                 </div>
             </div>

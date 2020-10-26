@@ -6,8 +6,8 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <a href="/home"><span class="btn btn-success ">Kembali ke Home</span></a>
-                    <a href="/add-data"><span class="btn btn-primary ">Tambah Data</span></a></div>
+                    <a href="{{url('/home')}}"><span class="btn btn-success ">Kembali ke Home</span></a>
+                    <a href="{{url('/add-data')}}"><span class="btn btn-primary ">Tambah Data</span></a></div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -40,9 +40,9 @@
                                 <td><img src="{{ asset('/images/' . $ket->gambar) }}" width="80px" height="80px" />
                                 </td>
                                 <td>
-                                    <a href="/edit-data/{{ $ket->id }}"><span class="btn btn-warning ">Edit</span></a>
+                                    <a href="/kuliah/tgskomdat/public/edit-data/{{$ket->id}}"><span class="btn btn-warning ">Edit</span></a>
                                     |
-                                    <a href="/view-data/hapus/{{ $ket->id }}"><span
+                                    <a href="/kuliah/tgskomdat/public/view-data/hapus/{{ $ket->id }}"><span
                                             class="btn btn-danger ">Hapus</span></a>
                                 </td>
                             </tr>

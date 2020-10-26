@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }} <a href="/view-data"><span class="btn btn-primary ">Lihat
+                <div class="card-header">{{ __('Dashboard') }} <a href="{{url('/view-data')}}"><span class="btn btn-primary ">Lihat
                             Data</span></a></div>
 
                 <div class="card-body">

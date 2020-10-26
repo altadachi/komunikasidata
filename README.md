@@ -11,7 +11,7 @@
 
 <h4>Instalasi<h4>
 - Create Database mysql : db_tgskomdat
-- Install Composer
+- Composer Install
 - Install Node JS
 - Install PHP 7 (versi Baru)
 - npm install

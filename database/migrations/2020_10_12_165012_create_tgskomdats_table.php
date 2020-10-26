@@ -16,6 +16,7 @@ class CreateTgskomdatsTable extends Migration
         Schema::create('tgskomdats', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
+            $table->string('kategori');
             $table->string('keterangan');
             $table->string('gambar');
             $table->timestamps();

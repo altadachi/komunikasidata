@@ -36,16 +36,22 @@
                             <input type="text" name="judul" class="form-control form-control" value="{{$data->judul}}">
                         </div>
                         <div class="form-group">
+                            <label for="judul">Kategori</label>
+                            <br>
+                            <input type="text" name="kategori" class="form-control form-control"
+                                value="{{$data->kategori}}">
+                        </div>
+                        <div class="form-group">
                             <label for="keterangan">Comment:</label>
                             <br>
                             <textarea type="text" name="keterangan" rows="5"
                                 class="form-control">{{$data->keterangan}}</textarea>
                         </div>
-                        <div class=" form-group">
+                        {{-- <div class=" form-group">
                             <label>Pilih Gambar</label>
                             <input type="file" name="file" id="file" class="form-control" onchange="previewFile(this)">
                             <img id="previewImg" alt="Gambar" style="max-width: 130px;margin-top:20px;">
-                        </div>
+                        </div> --}}
                         <input type="submit" class="btn btn-primary float-right" value="Simpan">
                         <a href="/view-data" type="button" class="btn btn-danger float-right">Batal</a>
                     </form>

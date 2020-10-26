@@ -20,15 +20,18 @@ class TgskomdatController extends Controller
         return view('add-data');
     }
 
+
     public function storeTgskomdat(Request $request)
     {
         $judul = $request->judul;
+        $kategori = $request->kategori;
         $keterangan = $request->keterangan;
         $image = $request->file('file');
         $imageName = time() . '.' . $image->extension();
         $image->move(public_path('images'), $imageName);
         $data = new Tgskomdat();
         $data->judul = $judul;
+        $data->kategori = $kategori;
         $data->keterangan = $keterangan;
         $data->gambar = $imageName;
         $data->save();
@@ -40,6 +43,8 @@ class TgskomdatController extends Controller
     public function getData()
     {
         $data = Tgskomdat::orderBy('id', 'DESC')->get();
+        // $tbls = Tgskomdat::orderBy('id', 'DESC')->paginate(2);
+        // return view('view-data', compact('tbls'));
         return view('view-data', compact('data'));
     }
 
@@ -56,6 +61,7 @@ class TgskomdatController extends Controller
 
         $data = Tgskomdat::find($request->id);
         $data->judul = $request->judul;
+        $data->kategori = $request->kategori;
         $data->keterangan = $request->keterangan;
 
         if ($request->file != '') {
@@ -79,38 +85,7 @@ class TgskomdatController extends Controller
         }
 
         $data->save();
-        //--------------------------------------------------------
-        // $data = Tgskomdat::findOrFail($data->id);
 
-        // if ($request->file('image') == "") {
-
-        //     $data->update([
-        //         'title'     => $request->title,
-        //         'content'   => $request->content
-        //     ]);
-        // } else {
-
-        //     //hapus old image
-        //     Storage::disk('public/images/')->delete('public/images/' . $data->gambar);
-
-        //     //upload new image
-        //     $gambar = $request->file('image');
-        //     $gambar->storeAs('public/blogs', $gambar->hashName());
-
-        //     $data->update([
-        //         'gambar'     => $gambar->hashName(),
-        //         'judul'     => $request->judul,
-        //         'keterangan'   => $request->keterangan
-        //     ]);
-        // }
-
-        // if ($data) {
-        //     //redirect dengan pesan sukses
-        //     return redirect()->route('edit-data')->with(['success' => 'Data Berhasil Diupdate!']);
-        // } else {
-        //     //redirect dengan pesan error
-        //     return redirect()->route('edit-data')->with(['error' => 'Data Gagal Diupdate!']);
-        // }
 
         return back()->with('success', 'Data Telah berhasil di input');
     }

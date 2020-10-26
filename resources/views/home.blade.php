@@ -52,7 +52,8 @@
                     <div class="d-flex justify-content-center">
 
                         <div class="card" style="width:350px;">
-                            <img class="card-img-top" src="assets/altadachi.jpg" alt="Card image">
+                            <img class="card-img-top rounded-circle" src="assets/altadachi.jpg" alt="altadachi"
+                                width="80">
                             <div class="card-body">
                                 <h4 class="card-title">Muhaltatin Jabaarsyah Dachi</h4>
                                 <p class="card-text">Nim : 180121246</p>
@@ -60,26 +61,29 @@
                             </div>
                         </div>
                         <div class="card" style="width:350px; margin-left:5px">
-                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <img class="card-img-top rounded-circle" src="assets/ayutiana.jpeg" alt="ayutiana"
+                                width="80">
                             <div class="card-body">
-                                <h4 class="card-title">John Doe</h4>
-                                <p class="card-text">Some example text.</p>
+                                <h4 class="card-title">Ayu Tiana Artamian br Purba</h4>
+                                <p class="card-text">180121233</p>
 
                             </div>
                         </div>
                         <div class="card" style="width:350px; margin-left:5px">
-                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <img class="card-img-top rounded-circle " src="assets/jokosiswanto.jpeg" alt="jokosiswanto"
+                                width="80" height="270">
                             <div class="card-body">
-                                <h4 class="card-title">John Doe</h4>
-                                <p class="card-text">Some example text.</p>
+                                <h4 class="card-title">Joko Siswanto</h4>
+                                <p class="card-text">180121215</p>
 
                             </div>
                         </div>
                         <div class="card" style="width:350px; margin-left:5px">
-                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <img class="card-img-top rounded-circle" src="assets/yunisarah.jpeg" alt="yunisarah"
+                                width="80">
                             <div class="card-body">
-                                <h4 class="card-title">John Doe</h4>
-                                <p class="card-text">Some example text.</p>
+                                <h4 class="card-title">Yuni Sarah</h4>
+                                <p class="card-text">180121236</p>
 
                             </div>
                         </div>

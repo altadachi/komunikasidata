@@ -33,6 +33,11 @@
                             <input type="text" name="judul" class="form-control form-control">
                         </div>
                         <div class="form-group">
+                            <label for="kategori">Kategori</label>
+                            <br>
+                            <input type="text" name="kategori" class="form-control form-control">
+                        </div>
+                        <div class="form-group">
                             <label for="comment">Comment:</label>
                             <br>
                             <textarea name="keterangan" id="comment" class="form-control form-control"

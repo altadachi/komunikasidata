@@ -24,29 +24,32 @@
                             <tr>
                                 <th>No</th>
                                 <th>Judul</th>
+                                <th>Kategori</th>
                                 <th>Keterangan</th>
                                 <th>Gambar</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($data as $i =>$data)
+                            @foreach ($data as $i =>$ket)
                             <tr>
                                 <td>{{$i + 1}}</td>
-                                <td>{{ $data->judul}}</td>
-                                <td>{{ $data->keterangan}}</td>
-                                <td><img src="{{ asset('/images/' . $data->gambar) }}" width="80px" height="80px" />
+                                <td>{{ $ket->judul}}</td>
+                                <td>{{ $ket->kategori}}</td>
+                                <td>{{ $ket->keterangan}}</td>
+                                <td><img src="{{ asset('/images/' . $ket->gambar) }}" width="80px" height="80px" />
                                 </td>
                                 <td>
-                                    <a href="/edit-data/{{ $data->id }}"><span class="btn btn-warning ">Edit</span></a>
+                                    <a href="/edit-data/{{ $ket->id }}"><span class="btn btn-warning ">Edit</span></a>
                                     |
-                                    <a href="/view-data/hapus/{{ $data->id }}"><span
+                                    <a href="/view-data/hapus/{{ $ket->id }}"><span
                                             class="btn btn-danger ">Hapus</span></a>
                                 </td>
                             </tr>
                             @endforeach
                         </tbody>
                     </table>
+
                 </div>
             </div>
         </div>

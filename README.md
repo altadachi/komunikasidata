@@ -19,6 +19,8 @@
 <li>php artinsan generete:key</li>
         <li>Jika menggunakan database mysql ----> install php-mysql </li>
         <li>Jika menggunakan database mysql ----> install php-pgsql </li>
+        <li>linux sudo chmod -R o+w public/ </li>
+        <li>linux sudo chmod -R o+w storage/ </li>
 </ul>
     
   

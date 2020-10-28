@@ -17,7 +17,7 @@ class CreateTgskomdatsTable extends Migration
             $table->id();
             $table->string('judul');
             $table->string('kategori');
-            $table->string('keterangan');
+            $table->longText('keterangan');
             $table->string('gambar');
             $table->timestamps();
         });

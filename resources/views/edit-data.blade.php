@@ -45,7 +45,7 @@
                             <label for="keterangan">Comment:</label>
                             <br>
                             <textarea type="text" name="keterangan" rows="5"
-                                class="form-control">{{$data->keterangan}}</textarea>
+                                class="ckeditor form-control" id="summary-ckeditor">{{$data->keterangan}}</textarea>
                         </div>
                         {{-- <div class=" form-group">
                             <label>Pilih Gambar</label>

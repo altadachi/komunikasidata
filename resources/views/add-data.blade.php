@@ -40,7 +40,7 @@
                         <div class="form-group">
                             <label for="comment">Comment:</label>
                             <br>
-                            <textarea name="keterangan" id="comment" class="form-control form-control"
+                            <textarea name="keterangan" id="summary-ckeditor" class="ckeditor form-control"
                                 rows="10"></textarea>
                         </div>
                         <div class="form-group">
@@ -49,7 +49,8 @@
                             <img id="previewImg" alt="Gambar" style="max-width: 130px;margin-top:20px;">
                         </div>
                         <input type="submit" class="btn btn-primary float-right" value="Simpan">
-                        <a href="{{url('/view-data')}}" type="button" class="btn btn-danger float-right">Batal</a>
+			<a href="{{url('/view-data')}}" type="button" class="btn btn-danger float-right">Batal</a>
+			<a href="{{url('/home')}}" type="button" class="btn btn-success float-right">Home</a>
                     </form>
                 </div>
             </div>

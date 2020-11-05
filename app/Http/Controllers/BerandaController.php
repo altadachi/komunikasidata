@@ -23,7 +23,7 @@ class BerandaController extends Controller
     public function cari(Request $request)
     {
         $cari = $request->cari;
-        $files = Tgskomdat::where('judul', 'like', "%" . $cari . "%")->paginate(5);
+        $files = Tgskomdat::where('judul', 'like', "%" . $cari . "%")->paginate(1);
         return view('welcome', compact('files'));
     }
 }

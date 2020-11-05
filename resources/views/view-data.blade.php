@@ -36,7 +36,7 @@
                                 <td>{{$i + 1}}</td>
                                 <td>{{ $ket->judul}}</td>
                                 <td>{{ $ket->kategori}}</td>
-                                <td>{{ $ket->keterangan}}</td>
+                                <td>{!! $ket->keterangan!!}</td>
                                 <td><img src="{{ asset('/images/' . $ket->gambar) }}" width="80px" height="80px" />
                                 </td>
                                 <td>
